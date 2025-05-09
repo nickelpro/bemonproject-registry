@@ -1,7 +1,8 @@
 --- a/src/beman/exemplar/CMakeLists.txt	2025-03-05 06:01:47.000000000 -0500
 +++ b/src/beman/exemplar/CMakeLists.txt	2025-05-09 19:34:26.861986882 -0400
-@@ -1,13 +1,11 @@
- # SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+@@ -2,14 +2,12 @@
+
+ include(GNUInstallDirs)
 
 -add_library(beman.exemplar)
 +add_library(beman.exemplar INTERFACE)
@@ -14,5 +15,5 @@
 -    PUBLIC
 +    INTERFACE
          FILE_SET HEADERS
-         BASE_DIRS ${PROJECT_SOURCE_DIR}/include
-         FILES ${PROJECT_SOURCE_DIR}/include/beman/exemplar/identity.hpp
+         BASE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/../../../include
+         FILES
