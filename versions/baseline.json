@@ -1,0 +1,12 @@
+{
+  "default": {
+    "beman-cmake-tools": {
+      "baseline": "2025-05-09",
+      "port-version": 0
+    },
+    "beman-exemplar": {
+      "baseline": "1.0.0",
+      "port-version": 0
+    }
+  }
+}
