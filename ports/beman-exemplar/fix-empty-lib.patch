@@ -1,0 +1,18 @@
+--- a/src/beman/exemplar/CMakeLists.txt	2025-03-05 06:01:47.000000000 -0500
++++ b/src/beman/exemplar/CMakeLists.txt	2025-05-09 19:34:26.861986882 -0400
+@@ -1,13 +1,11 @@
+ # SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+
+-add_library(beman.exemplar)
++add_library(beman.exemplar INTERFACE)
+ add_library(beman::exemplar ALIAS beman.exemplar)
+
+-target_sources(beman.exemplar PRIVATE identity.cpp)
+-
+ target_sources(
+     beman.exemplar
+-    PUBLIC
++    INTERFACE
+         FILE_SET HEADERS
+         BASE_DIRS ${PROJECT_SOURCE_DIR}/include
+         FILES ${PROJECT_SOURCE_DIR}/include/beman/exemplar/identity.hpp
